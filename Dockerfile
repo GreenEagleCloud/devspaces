@@ -3,7 +3,6 @@ FROM registry.redhat.io/devspaces/udi-rhel9:latest
 USER 0
 
 RUN dnf install -y \
-    epel-release \
     git \
     vim-enhanced \
     jq \
