@@ -1,0 +1,14 @@
+schemaVersion: 2.2.0
+
+components:
+  - name: tools
+    container:
+      image: ghcr.io/greeneaglecloud/devspaces:latest
+      mountSources: true
+      memoryLimit: 4Gi
+
+commands:
+  - id: terminal
+    exec:
+      component: tools
+      commandLine: bash
