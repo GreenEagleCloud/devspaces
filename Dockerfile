@@ -4,14 +4,11 @@ USER 0
 
 RUN dnf install -y \
     git \
-    vim \
-    tmux \
+    vim-enhanced \
     jq \
-    yq \
     wget \
     curl \
     sudo \
-    google-noto-sans-mono-fonts \
     && dnf clean all
 
 # Install Oh My Bash
